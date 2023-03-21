@@ -1,5 +1,6 @@
  # **THE WEB IS FOR EVERYONE INTERACTIVE FUNCTIONALITY 🥚🥜**
 
+<img width="576" alt="Schermafbeelding 2023-03-15 om 14 24 38" src="https://user-images.githubusercontent.com/112856019/225322066-1bba6075-7eb0-46a2-a834-871628b38924.png">
 
 ## Inhoudsopgave
 
