@@ -17,6 +17,18 @@
 
 ## Kenmerken🧗‍♀️
 
+### Bij het maken van deze opdracht heb ik gebruik gemaakt van:
+* 🔌Node
+* 📟Ejs
+* 📡Express
+* 🗂Vini Mini API
+* 📟 HTML
+* 🎨 CSS
+
+
+**Tools**
+* 🖥️ VS Code
+
 
 ## Installatie🖥️
 
