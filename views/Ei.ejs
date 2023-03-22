@@ -1,0 +1,25 @@
+<%- include('./partials/head.ejs') %>
+
+<div class="grid-container">
+   
+    <% producten.forEach(product => { %>
+        <% if(product.categorie.titel === "Ei") { %>   
+            <article>
+                <h2><%= product.titel %></h2>
+                <% if(product.titel === "Mijn eerste ei in 3 stappen") { %>   
+                    <img class="article-img" src="/Ei-in-3-stappen.png" alt="Ei in 3 stappen">
+                <% } else if(product.titel === "Mijn eerste ei in 6 stappen") { %>   
+                    <img class="article-img" src="/Ei-in-6-stappen.png" alt="Ei in 6 stappen">
+                <% } %>
+                <span class="product-price">
+                    € <%= product.prijs %>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+
+                </span>
+            </article>
+        <% } %>   
+    <% }); %>
+
+</div>
+
+<%- include('./partials/footer.ejs') %>

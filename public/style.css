@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+body {
+    font-family: 'Montserrat';
+    background-color: var(--white);   
+}
+
+:root{
+    --yellow: #f4eb34;
+    --blue: #72afa6;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+/* Header */   
+header {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--yellow);
+    position: relative;
+    padding: 1em;
+}
+
+p {
+    color: var(--black);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 1.2em auto;
+    width: 100%;
+}
+
+/* NAV + LOGO */   
+
+.logo{
+    width: 10rem;
+}
+ nav{
+    height: 9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+ }
+ .nav-links{
+    flex: 1;
+    text-align: left;
+ }
+    
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 4rem;
+    position: relative;
+    letter-spacing: 0.3rem;
+       
+}
+ .nav-links ul li a{
+    color:var(--black);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+    
+.nav-links ul li a:hover{
+color: var(--blue);
+}
+    
+.nav menu{
+    position: relative;
+}
+.navbar {
+    width: 12%;
+    background-color: var(--white);
+    overflow: auto;
+}
+      
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 15px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 25px;
+}
+.navbar a:hover {
+    color: var(--blue);
+ }
+/* allergenen catergory */
+h1{
+    position: absolute;
+    left: 64rem;
+    top: 190px;
+    margin-bottom:10rem ;
+    font-size: 5rem;
+    color: var(--blue);
+
+}
+.grid-container{
+    width: 100vw;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top:4rem;
+    color: var(--white);
+    overflow: hidden;
+
+}
+
+.product-price{
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+.product-price a{
+    font-size: 2.7rem;
+    color: var(--blue);
+    font-weight: lighter;
+
+}
+ /* allergenen naam/foto */
+
+.article-a{
+    text-decoration: none;
+}
+article{
+    width:40rem;
+    height:20rem;
+    border: 4px solid var(--blue);
+    color:var(--blue);    
+    text-decoration: none;
+    text-align: center;
+}
+article h2{
+    position: relative;
+    top:1rem;
+    font-size: 2rem;
+}
+.article-img{
+    width: 50%;
+    height: 70%;
+}
+/* nieuwsbrief */
+
+.input-container {
+    display: flex;
+    width: 50rem;
+    margin-bottom: 15px;
+    margin-left: 35vw;
+}
+.input-container a{
+    font-size: 3rem;
+}
+
+.icon {
+  padding: 30px;
+  background: var(--blue);
+  color: var(--white);
+  min-width: 50px;
+  text-align: center;
+  font-size: 5rem;
+
+}
+ /* email form */
+
+.input-field {
+width: 50vw;
+padding: 30px;
+outline: none;
+font-size: 1.5rem;
+}
+
+.input-field:focus {
+  border: 3px solid var(--blue);
+}
+h2{
+color: var(--blue);
+font-size: 4.5rem;
+text-align: center;
+
+}
+h3{
+font-weight: 400;
+font-size: 1.9rem;
+text-align: center;
+
+}
+.btn {
+background-color: var(--blue);
+color: var(--white);
+padding: 25px 20px;
+border: none;
+cursor: pointer;
+width: 31.5vw;
+opacity: 0.9;
+font-size: 2rem;
+margin-left: 35vw;
+
+}
+.btn:hover {
+  opacity: 1;
+    
+}
+ /* footer */
+ #footer-flexbox{
+    display: flex;
+   justify-content: space-evenly;
+   font-size: 30px;
+   font-weight: bolder;
+} 
+h4{
+   color: var(--blue);
+   font-weight: 900;
+}
+footer a{
+   text-decoration: none;
+   color: var(--black);
+   font-size: 28px;
+   line-height: 26px;
+   font-weight: lighter;
+}
+.footer-ul{
+   list-style: none;
+   min-width: 195px;
+   margin-bottom: 25px;
+}
+footer p{
+   padding: 30px;
+} 

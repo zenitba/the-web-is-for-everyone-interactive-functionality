@@ -1,0 +1,31 @@
+<%- include('./partials/head.ejs') %>
+
+<div class="grid-container">
+   
+        <% producten.forEach(product => { %>
+            <% if(product.categorie.titel === "Pinda") { %>   
+                <article>
+                    <h2><%= product.titel %></h2>
+                    <% if(product.titel === "Pinda presentje") { %>   
+                        <img class="article-img" src="/Pinda-presentje.png" alt="Pinda presentje">
+                    <% } else if(product.titel === "Mijn eerste pinda in 3 stappen") { %>   
+                        <img class="article-img" src="/Pinda-in-3-stappen.png" alt="Pinda in 3 stappen">
+            <% } else if(product.titel === "Mijn eerste pinda in 6 stappen") { %> 
+                <img class="article-img" src="/Pinda-in-6-stappen.png" alt="Pinda in 6 stappen">
+                <% } else if(product.titel === "Pinda Opvolgkit") { %> 
+                    <img class="article-img" src="/Pinda-opvolgkit.png" alt="Pinda opvolgkit">
+            <% } %>
+                <span class="product-price">
+                    € <%= product.prijs %>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+
+                </span>
+                </article>
+            <% } %>   
+        <% }); %>
+ 
+</div>
+
+
+
+<%- include('./partials/footer.ejs') %>

@@ -1,0 +1,16 @@
+<%- include('./partials/head1.ejs') %>
+
+<div class="container">
+    <h1 class="label">Welkom Login</h1>
+    <form class="login_form" action="home" method="get" name="form" onsubmit="return validated()">
+        <div class="font">Emailadres</div>
+        <input autocomplete="off" type="text" name="email">
+        <div id="email_error">Please fill up your Email</div>
+        <div class="font font2">Password</div>
+        <input type="password" name="password">
+        <div id="pass_error">Please fill up your Password</div>
+        <button type="submit">Login</button>
+    </form>
+</div>	
+
+<%- include('./partials/footer1.ejs') %>
