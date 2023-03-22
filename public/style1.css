@@ -79,6 +79,7 @@ body{
 	border-radius: 3px;
 	border: 1px solid var(--blue);
 
+	
 }
 .login_form #email_error,
 .login_form #pass_error{
