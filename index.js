@@ -1,6 +1,6 @@
 import express from 'express'
 
-// basis  url voor de api
+// Url Vini Mini Api
 const url = 'https://api.vinimini.fdnd.nl/api/v1'
 
 // Maak een nieuwe express app
@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(express.static('public'))
 
-// Maak een route voor de index
+// Route inlog scherm naar home page
 app.get('/home', (request, response) => {
     let categoriesUrl = url + '/categories'
 
@@ -31,7 +31,7 @@ app.get('/producten', (request, response) => {
       response.render('producten', data)
     })
   })
-// basis url van de api, /producten
+// basis url van de api, /producten /ei /pinda
 app.get('/Ei', async (request, response) => {
     let productenUrl = url + '/producten'
   
@@ -40,7 +40,6 @@ app.get('/Ei', async (request, response) => {
     })
   })
   
-  // route naar pinda.ejs
   app.get('/Pinda', async (request, response) => {
     let productenUrl = url + '/producten'
   
