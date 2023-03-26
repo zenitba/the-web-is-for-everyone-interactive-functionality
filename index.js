@@ -1,6 +1,6 @@
 import express from 'express'
 
-// Url Vini Mini Api
+// basis  url voor de api
 const url = 'https://api.vinimini.fdnd.nl/api/v1'
 
 // Maak een nieuwe express app
@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(express.static('public'))
 
-// Route inlog scherm naar home page
+// route voor de index en login
 app.get('/home', (request, response) => {
     let categoriesUrl = url + '/categories'
 
@@ -31,7 +31,7 @@ app.get('/producten', (request, response) => {
       response.render('producten', data)
     })
   })
-// basis url van de api, /producten /ei /pinda
+// basis url van de api, /producten
 app.get('/Ei', async (request, response) => {
     let productenUrl = url + '/producten'
   
@@ -40,6 +40,7 @@ app.get('/Ei', async (request, response) => {
     })
   })
   
+  // route naar pinda.ejs
   app.get('/Pinda', async (request, response) => {
     let productenUrl = url + '/producten'
   
@@ -78,7 +79,7 @@ app.get('/Amandel', (request, response) => {
   })
 
 // Stel het poortnummer in en start express
-app.set('port', process.env.PORT || 2000)
+app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
