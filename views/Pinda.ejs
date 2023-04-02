@@ -1,9 +1,9 @@
 <%- include('./partials/head.ejs') %>
 
 <div class="grid-container">
-   
-        <% producten.forEach(product => { %>
-            <% if(product.categorie.titel === "Pinda") { %>   
+    <% producten.forEach(product => { %>
+        <% if(product.categorie.titel === "Pinda") { %>   
+                
                 <article>
                     <h2><%= product.titel %></h2>
                     <% if(product.titel === "Pinda presentje") { %>   

@@ -1,16 +1,38 @@
-<%- include('./partials/head1.ejs') %>
+<%- include('./partials/head.ejs') %>
+  <!--catergorien-->
+<div class="grid-container">
+<h1>De Allergenen</h1>
+    <% categories.forEach(category => { %>
+        <a class="article-a" href="/<%= category.titel %>">
+            <article> 
+                <h2><%= category.titel %></h2>
+                <img class="article-img" src="/<%=category.titel%>.png" alt="Allergenen icons">
+            </article>
+        </a>
+    <% }); %>
+    </div>
 
-<div class="container">
-    <h1 class="label">Welkom Login</h1>
-    <form class="login_form" action="home" method="get" name="form" onsubmit="return validated()">
-        <div class="font">Emailadres</div>
-        <input autocomplete="off" type="text" name="email">
-        <div id="email_error">Please fill up your Email</div>
-        <div class="font font2">Password</div>
-        <input type="password" name="password">
-        <div id="pass_error">Please fill up your Password</div>
-        <button type="submit">Login</button>
+  <!--review form-->
+    <form class="form-notities" action="/" method="post">
+
+        <fieldset>
+            <h2>Reviews</h2>
+    
+           
+            <label for="titel">Review Titel</label>
+            <input name="titel" id="titel" type="text" required>
+    
+            <label for="beschrijving">Schrijf een review</label>
+            <textarea id="beschrijving" name="beschrijving" placeholder="Deel uw ervaring" required></textarea>
+        
+            <label for="herinnering">Herinnering</label>
+            <input name="herinnering" id="herinnering" type="datetime-local" required>
+    
+            <label for="datum">Datum</label>
+            <input name="datum" id="datum" type="datetime-local" required>
+    
+        <button type="submit">Versturen</button>
+    </fieldset>
     </form>
-</div>	
 
-<%- include('./partials/footer1.ejs') %>
+<%- include('./partials/footer.ejs') %>
