@@ -12,9 +12,10 @@
   * [Licentie](#licentie)
 
 ## Beschrijving📋
-
+Omdat ik nog niet bekend ben met Node, Express en JSON POST/SHOUT is het voor mij een hele uitdaging een interatieve toepassing te ontwerpen waarbij gebruikers iets op de ebsite kunnen achterlaten. Ook het begrijpen van de code is voor mij een uitdaging.
 
 ## Gebruik👩🏽‍💻
+Je begint bij de homepage van Vini Mini dat is de allergenen pagina. Als je dan vervolgens op 'producten' klikt, krijg je een overzichtspagina van de producten die Vini Mini verkoopt. Als je vervolgens op een product klikt krijg je een deatilpagina van het project te zien. Ook kan je reviews achterlaten als gebruiker.
 
 ## Kenmerken🧗‍♀️
 
