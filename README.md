@@ -48,7 +48,11 @@
 
 Ik heb ook **Post** toegvoegd voor de notities/reviews.
 ## Bronnen🌐
+>https://github.com/fdnd-agency/vini-mini
 
+>https://api.vinimini.fdnd.nl
+
+>https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
