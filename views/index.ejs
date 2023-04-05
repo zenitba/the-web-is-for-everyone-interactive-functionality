@@ -1,38 +1,43 @@
 <%- include('./partials/head.ejs') %>
-  <!--catergorien-->
-<div class="grid-container">
-<h1>De Allergenen</h1>
-    <% categories.forEach(category => { %>
-        <a class="article-a" href="/<%= category.titel %>">
-            <article> 
-                <h2><%= category.titel %></h2>
-                <img class="article-img" src="/<%=category.titel%>.png" alt="Allergenen icons">
-            </article>
-        </a>
-    <% }); %>
-    </div>
-
+  
   <!--review form-->
-    <form class="form-notities" action="/" method="post">
+  <form class="form-notities" action="/" method="post">
 
-        <fieldset>
-            <h2>Reviews</h2>
+    <fieldset>
+        <h2>Reviews</h2>
+
+       
+        <label for="titel">Review Titel</label>
+        <input name="titel" id="titel" type="text" required>
+
+        <label for="beschrijving">Schrijf een review</label>
+        <textarea id="beschrijving" name="beschrijving" placeholder="Deel uw ervaring" required></textarea>
     
-           
-            <label for="titel">Review Titel</label>
-            <input name="titel" id="titel" type="text" required>
-    
-            <label for="beschrijving">Schrijf een review</label>
-            <textarea id="beschrijving" name="beschrijving" placeholder="Deel uw ervaring" required></textarea>
-        
-            <label for="herinnering">Herinnering</label>
-            <input name="herinnering" id="herinnering" type="datetime-local" required>
-    
-            <label for="datum">Datum</label>
-            <input name="datum" id="datum" type="datetime-local" required>
-    
-        <button type="submit">Versturen</button>
-    </fieldset>
-    </form>
+        <label for="herinnering">Herinnering</label>
+        <input name="herinnering" id="herinnering" type="datetime-local" required>
+
+        <label for="datum">Datum</label>
+        <input name="datum" id="datum" type="datetime-local" required>
+
+    <button type="submit">Versturen</button>
+</fieldset>
+</form>
+
+
+
+ <!--reviews-->
+  <div class="grid-container">
+    <% notities.forEach(notitie => { %>
+        <a class="article-a" href="<%= notitie.titel %>">
+                <article> 
+                    <h2><%= notitie.datum %></h2>
+                    <h5><%= notitie.beschrijving %></h5>
+                </article>
+            </a>
+         <% }); %>
+        </div>
+       
+
+ 
 
 <%- include('./partials/footer.ejs') %>

@@ -29,6 +29,20 @@ server.get('/', (request, response) => {
         });
     });
 });
+server.get('/producten', (request, response) => {
+    let categoriesUrl = url + '/categories';
+    let productenUrl = url + '/producten';
+
+    fetchJson(categoriesUrl).then((data1) => {
+        const baseUrl = 'https://api.vinimini.fdnd.nl/api/v1/';
+        const pepijnId = 'notities?id=clemozv3c3eod0bunahh71sx7';
+        const url = `${baseUrl}${pepijnId}`;
+
+        fetchJson(url).then((data2) => {
+            response.render('producten', { categories: data1.categories, notities: data2.notities });
+        });
+    });
+});
 
 // Maak een route naar de ei.ejs
 server.get('/Pinda', async (request, response) => {
@@ -47,7 +61,9 @@ server.get('/Ei', async (request, response) => {
         response.render('Ei', { producten: data.producten });
     });
 });
+
 // allergenen zonder inhoud 
+
 server.get('/Amandel', (request, response) => {
     response.render('Amandel')
   })

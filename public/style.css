@@ -19,7 +19,7 @@ header {
     padding: 1em;
 }
 
-p {
+p{
     color: var(--black);
     text-align: center;
     font-size: 1.4rem;
@@ -116,6 +116,11 @@ h1{
     font-weight: lighter;
 
 }
+h5{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--blue);
+}
  /* allergenen naam/foto */
 
 .article-a{
@@ -139,12 +144,10 @@ article h2{
     width: 50%;
     height: 70%;
 }
+article:hover {
+    transform:scale(1.05)
+  }
 
-.slidershow-container{
-    display: flex;
-    flex-direction: row-reverse;
-    color: #72afa6;
-}
 
 /*reviews*/
 
