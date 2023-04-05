@@ -13,7 +13,9 @@
 
 ## Beschrijving📋
 Uit de backlog heb ik de volgende userstory uitgekozen.
+
 >Userstory #23 Als ouder wil ik een overzicht zien van alle voedingssupplement producten, zodat ik kan achterhalen of er een geschikt product voor mijn Vini Mini bij zit.
+
 In deze sprint gaan we gegevens toevoegen in de API doormiddel van een formulier gebruiken met method="post" om het te kunnen posten. De toegevoegde gegevens kan je daarna weergeven op je website.
 
 De API bevat notities data dat je kan je toepassen als je al in de vorige sprints voor de opdrachtgever agenda heb gemaakt het leek mij leuk omdat ik geen agenda heb gemaakt inplaats van notities te maken reviews te maken zodat je als gebruiker een review kan schrijven over Vini Mini.
